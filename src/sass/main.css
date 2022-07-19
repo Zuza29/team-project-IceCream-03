@@ -38,7 +38,8 @@ body {
 .heading {
   display: grid;
   max-width: 30%;
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
   padding-top: 160px;
   padding-left: 120px;
 }
@@ -79,7 +80,8 @@ body {
   grid-template-columns: 1fr 1fr;
   max-width: 30%;
   min-height: 200px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   padding-left: 77px;
   padding-top: 76px;
 }
@@ -136,4 +138,23 @@ body {
 .numbers__digits--one {
   right: 15px;
   top: 15px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*Colors*/
+/* Body background color*/
+/* Main text color*/
+/*Primary text color*/
+/*Secondary text color*/
+/* Header background color*/
+/* hover color */
+/* H2 and H3 color */
+/* Logo main color *//*# sourceMappingURL=main.css.map */
