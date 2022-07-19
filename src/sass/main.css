@@ -62,6 +62,7 @@ body {
   position: absolute;
   left: 475px;
   top: 52px;
+  z-index: -2000;
 }
 .ice-cream__ellipse {
   fill: pink;
