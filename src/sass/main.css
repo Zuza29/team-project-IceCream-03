@@ -37,4 +37,12 @@
 /* Header background color*/
 /* hover color */
 /* H2 and H3 color */
-/* Logo main color *//*# sourceMappingURL=main.css.map */
+/* Logo main color */
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}/*# sourceMappingURL=main.css.map */
