@@ -1,0 +1,167 @@
+button:hover {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:hover,
+:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: salmon;
+}
+
+// Hero
+
+.heading {
+    display: grid;
+    max-width: 30%;
+    column-gap: 15px;
+    padding-top: 160px;
+    padding-left: 120px;
+
+    &__text {
+    grid-column: 1 / span 2;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    }
+
+    &__button {
+    border-radius: 20px;
+    border: none;
+    padding: 15px 0 15px 0;
+    }
+}
+
+.hero {
+    position: relative;
+}
+
+// Ice cream
+
+.ice-cream {
+    position: absolute;
+    left: 475px;
+    top: 52px;
+    z-index: -2000;
+
+    &__ellipse {
+    fill: pink;
+    z-index: -1000;
+    width: 538px;
+    height: 538px;
+    }
+
+    &__picture {
+    position: absolute;
+    left: 30%;
+    }
+}
+
+// Milk pic
+
+.milk-picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 30%;
+    min-height: 200px;
+    column-gap: 30px;
+    padding-left: 77px;
+    padding-top: 76px;
+
+    &__text {
+    padding: 25% 0 25% 0;
+    max-width: 200px;
+    }
+
+    &__button {
+    display: block;
+    }
+}
+
+// Nav bar
+
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 50px 115px 0px 46px;
+
+  &__logo {
+    max-width: 250px;
+    max-height: 50px;
+  }
+
+  &__logo,
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+  }
+}
+
+// Numbers 
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 200px;
+    height: 500px;
+
+    &__ellipse {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+
+    &--one {
+        right: 10px;
+        top: 10px;
+    }
+    }
+
+    &__text {
+    &--one {
+        right: 20px;
+        top: 50px;
+        margin-bottom: 80px;
+    }
+    }
+
+    &__digits {
+    &--one {
+        right: 15px;
+        top: 15px;
+    }
+    }
+}
+
+
+
+
