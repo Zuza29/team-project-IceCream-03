@@ -158,4 +158,30 @@ body {
 /* Header background color*/
 /* hover color */
 /* H2 and H3 color */
-/* Logo main color *//*# sourceMappingURL=main.css.map */
+/* Logo main color */
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer-name {
+  display: flex;
+}
+.footer-name-name__h2 {
+  font-family: "titan one";
+  font-style: normal;
+  font-weight: 30px;
+  line-height: 1.13;
+  color: #FFA5BA;
+}
+.footer-name-name__h3 {
+  font-family: "titan one";
+  font-style: normal;
+  font-weight: 58px;
+  line-height: 1.14;
+  color: #D41443;
+}/*# sourceMappingURL=main.css.map */

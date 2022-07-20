@@ -1,0 +1,19 @@
+.footer-name{
+    display: flex;
+
+&-name__h2{
+    font-family: "titan one";
+    font-style: normal;
+    font-weight: 30px;
+    line-height: 1.13;
+    color: #FFA5BA;
+}
+
+&-name__h3{
+    font-family: "titan one";
+    font-style: normal;
+    font-weight: 58px;
+    line-height: 1.14;
+    color: #D41443;
+}
+}
