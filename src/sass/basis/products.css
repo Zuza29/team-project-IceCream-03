@@ -1,0 +1,124 @@
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 115px;
+    padding-left: 115px;
+}
+
+.products__ul{
+    display:grid;
+    grid-template-columns: 335px 335px 335px;
+    column-gap:29px;
+    list-style:none;
+}
+
+.products__image{
+    width: 335px;
+    height: 335px;
+    margin-bottom:-125px;
+}
+
+.products{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.products__start{
+    font-weight: 400;
+    font-size:30px;
+    line-height:1.14em;
+    text-transform:uppercase;
+    text-align:center;
+    color:#ffa5ba;
+    font-family:'Titan One';
+}
+
+.products__header{
+    font-size:58px;
+    line-height:1.13em;
+    letter-spacing:0.06em;
+    text-align:center;
+    text-transform:uppercase;
+    color:#d41443;
+    font-family:'Titan One';
+}
+
+.products__header2{
+font-size: 30px;
+line-height:1.13em;
+text-transform:uppercase;
+color:#fff;
+margin-top:125px;
+font-family:'Titan One';
+letter-spacing: 0.04em;
+}
+
+.products__figure{
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+}
+
+.products__dots{
+   display:flex;
+   display:row;
+  list-style:none;
+  padding:32px;
+  justify-content: center;
+}
+
+.products__oval{
+    width: 6px;
+    height: 6px;
+    margin:4px;
+    border:1px solid white;
+    border-radius:50%;
+    background-color:#fff;
+}
+
+.products__text{
+    font-weight:700;
+    font-size:16px;
+    line-height:1.76em;
+    letter-spacing: 0.04em;
+    width: 241px;
+    padding-bottom:32px;
+    color:#fff;
+    margin:auto;
+    font-family:'DM Sans';
+}
+
+.products__figcaption{
+    background-color:#ffb8ca;
+    border-radius:24px;
+    width: 329px;
+    height: 525px;
+    z-index:-1;
+    text-align:center;
+}
+
+.products__figcaption--color2{
+    background-color:#F0d1a5;
+}
+
+.products__figcaption--color3{
+    background-color:#c2e297;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color:white;
+    border:none;
+
+}
+
+.button__svg{
+    width: 20px;
+    height: 20px;
+    fill:red;
+}
