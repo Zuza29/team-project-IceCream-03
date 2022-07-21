@@ -1,5 +1,5 @@
 button:hover {
-  cursor: pointer;
+cursor: pointer;
 }
 
 ul,
@@ -56,6 +56,7 @@ a {
 
   &__digits {
     font-size: 3rem;
+    color: $h2-color;
   }
 }
 
