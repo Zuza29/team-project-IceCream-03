@@ -3,8 +3,165 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+button:hover {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:hover,
+:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: salmon;
+}
+
+.heading {
+  display: grid;
+  max-width: 30%;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding-top: 160px;
+  padding-left: 120px;
+}
+.heading__text {
+  grid-column: 1/span 2;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.heading__button {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 0 15px 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.ice-cream {
+  position: absolute;
+  left: 475px;
+  top: 52px;
+  z-index: -2000;
+}
+.ice-cream__ellipse {
+  fill: pink;
+  z-index: -1000;
+  width: 538px;
+  height: 538px;
+}
+.ice-cream__picture {
+  position: absolute;
+  left: 30%;
+}
+
+.milk-picture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 30%;
+  min-height: 200px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-left: 77px;
+  padding-top: 76px;
+}
+.milk-picture__text {
+  padding: 25% 0 25% 0;
+  max-width: 200px;
+}
+.milk-picture__button {
+  display: block;
+}
+
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 50px 115px 0px 46px;
+}
+.navigation-bar__logo {
+  max-width: 250px;
+  max-height: 50px;
+}
+.navigation-bar__logo, .navigation-bar__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-bar__menu {
+  display: flex;
+  justify-content: space-around;
+  min-width: 400px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 200px;
+  height: 500px;
+}
+.numbers__ellipse {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+.numbers__ellipse--one {
+  right: 10px;
+  top: 10px;
+}
+.numbers__text--one {
+  right: 20px;
+  top: 50px;
+  margin-bottom: 80px;
+}
+.numbers__digits--one {
+  right: 15px;
+  top: 15px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*Colors*/
+/* Body background color*/
+/* Main text color*/
+/*Primary text color*/
+/*Secondary text color*/
+/* Header background color*/
+/* hover color */
+/* H2 and H3 color */
+/* Logo main color */
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+ 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
@@ -46,4 +203,346 @@
   padding-right: 15px;
   padding-left: 15px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.products__ul {
+  display: grid;
+  grid-template-columns: 335px 335px 335px;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  list-style: none;
+}
+
+.products__image {
+  width: 335px;
+  height: 335px;
+  margin-bottom: -125px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__start {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffa5ba;
+  font-family: "Titan One";
+}
+
+.products__header {
+  font-size: 58px;
+  line-height: 1.13em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  font-family: "Titan One";
+}
+
+.products__header2 {
+  font-size: 30px;
+  line-height: 1.13em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 125px;
+  font-family: "Titan One";
+  letter-spacing: 0.04em;
+}
+
+.products__figure {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.products__dots {
+  display: flex;
+  display: row;
+  list-style: none;
+  padding: 32px;
+  justify-content: center;
+}
+
+.products__oval {
+  width: 6px;
+  height: 6px;
+  margin: 4px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.products__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.76em;
+  letter-spacing: 0.04em;
+  width: 241px;
+  padding-bottom: 32px;
+  color: #fff;
+  margin: auto;
+  font-family: "DM Sans";
+}
+
+.products__figcaption {
+  background-color: #ffb8ca;
+  border-radius: 24px;
+  width: 329px;
+  height: 525px;
+  z-index: -1;
+  text-align: center;
+}
+
+.products__figcaption--color2 {
+  background-color: #F0d1a5;
+}
+
+.products__figcaption--color3 {
+  background-color: #c2e297;
+}
+
+.button-products {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+
+.button-products__svg {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+
+@media (max-width: 767px) {
+  .products__ul {
+    display: grid;
+    grid-template-columns: 280px;
+    list-style: none;
+    padding: 0;
+  }
+  .products__image {
+    width: 249px;
+    height: 252px;
+    padding: 0px 16px;
+    margin-bottom: -125px;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .products__start {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    font-family: "Titan One";
+  }
+  .products__header {
+    font-size: 34px;
+    line-height: 1.13em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d41443;
+    font-family: "Titan One";
+  }
+  .products__header2 {
+    font-size: 20px;
+    line-height: 1.13em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 125px;
+    font-family: "Titan One";
+    letter-spacing: 0.04em;
+  }
+  .products__figure {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .products__dots {
+    display: flex;
+    display: row;
+    list-style: none;
+    padding: 32px;
+    justify-content: center;
+  }
+  .products__oval {
+    width: 6px;
+    height: 6px;
+    margin: 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .products__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.76em;
+    letter-spacing: 0.04em;
+    width: 200px;
+    padding-bottom: 32px;
+    color: #fff;
+    margin: auto;
+    font-family: "DM Sans";
+  }
+  .products__figcaption {
+    background-color: #ffb8ca;
+    border-radius: 24px;
+    width: 280px;
+    height: 485px;
+    z-index: -1;
+    text-align: center;
+  }
+  .products__figcaption--color2 {
+    background-color: #F0d1a5;
+  }
+  .products__figcaption--color3 {
+    background-color: #c2e297;
+  }
+  .button-products {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+  }
+  .button-products__svg {
+    width: 20px;
+    height: 20px;
+    fill: red;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .products__ul {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    list-style: none;
+    padding: 0;
+  }
+  .products__image {
+    width: 220px;
+    height: 226px;
+    padding: 0px 16px;
+    margin-bottom: -125px;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .products__start {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    font-family: "Titan One";
+  }
+  .products__header {
+    font-size: 48px;
+    line-height: 1.13em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d41443;
+    font-family: "Titan One";
+  }
+  .products__header2 {
+    font-size: 20px;
+    line-height: 1.13em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 125px;
+    font-family: "Titan One";
+    letter-spacing: 0.04em;
+  }
+  .products__figure {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .products__dots {
+    display: flex;
+    display: row;
+    list-style: none;
+    padding: 32px;
+    justify-content: center;
+  }
+  .products__oval {
+    width: 6px;
+    height: 6px;
+    margin: 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .products__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.76em;
+    letter-spacing: 0.04em;
+    width: 198px;
+    padding-bottom: 32px;
+    color: #fff;
+    margin: auto;
+    font-family: "DM Sans";
+  }
+  .products__figcaption {
+    background-color: #ffb8ca;
+    border-radius: 24px;
+    width: 220px;
+    height: 485px;
+    z-index: -1;
+    text-align: center;
+  }
+  .products__figcaption--color2 {
+    background-color: #F0d1a5;
+  }
+  .products__figcaption--color3 {
+    background-color: #c2e297;
+  }
+  .button-products {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+  }
+  .button-products__svg {
+    width: 20px;
+    height: 20px;
+    fill: red;
+  }
+}
+
+.footer-name {
+  display: flex;
+}
+.footer-name-name__h2 {
+  font-family: "titan one";
+  font-style: normal;
+  font-weight: 30px;
+  line-height: 1.13;
+  color: #FFA5BA;
+}
+.footer-name-name__h3 {
+  font-family: "titan one";
+  font-style: normal;
+  font-weight: 58px;
+  line-height: 1.14;
+  color: #D41443;
+}/*# sourceMappingURL=main.css.map */
+
+
