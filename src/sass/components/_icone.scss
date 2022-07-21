@@ -1,0 +1,28 @@
+.icone {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    &-socialmedia {
+        display: flex;
+        padding-right: 10px;
+
+        &--color {
+            background-color: transparent;
+            fill: #FFFFFF;
+            transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+            transition-property: fill, background-color;
+        }
+
+        &--color:active,
+        &--color:hover,
+        &--color:focus {
+            fill: #FFFFFF;
+            border-radius: 50%;
+            background-color: #D41342;
+        }
+    }
+}
