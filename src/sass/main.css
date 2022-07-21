@@ -239,12 +239,6 @@ a {
 }
 
 /*Colors*/
-/* Body background color*/
-/* Main text color*/
-/*Primary text color*/
-/*Secondary text color*/
-/* Header background color*/
-/* hover color */
 /* H2 and H3 color */
 /* Logo main color */
 .example {
@@ -646,20 +640,24 @@ a {
 }
 .footer-name {
   display: flex;
+  flex-direction: column;
 }
 .footer-name-name__h2 {
-  font-family: "titan one";
+  display: flex;
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 30px;
   line-height: 1.13;
-  color: #FFA5BA;
+  color: var(-name__h2);
+  margin-bottom: 15px;
 }
 .footer-name-name__h3 {
-  font-family: "titan one";
+  display: flex;
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 58px;
   line-height: 1.14;
-  color: #D41443;
+  color: var(-name__h3);
 }
 
 .socialmedia {
@@ -667,7 +665,7 @@ a {
 }
 
 .sign {
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-style: bold;
   font-size: 14px;
   line-height: 1.86;
