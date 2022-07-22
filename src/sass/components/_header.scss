@@ -1,5 +1,4 @@
 
-
 button:hover {
   cursor: pointer;
 }
@@ -26,199 +25,365 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: $primary-text-color;
+}
+
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1.3fr 3fr 1.2fr;
+  align-items: center;
+  padding: 50px 115px 0px 46px;
+  position: relative;
+  z-index: 1005;
+  line-height: 1.31;
+  font-weight: 700;
+
+  &__logo {
+    max-width: 250px;
+    max-height: 50px;
+  }
+
+  &__logo,
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+  }
+
+  &__button {
+    margin-left: 20px;
+
+    &--btn {
+      border: none;
+      border-radius: 22px;
+      padding: 10px;
+      width: 80%;
+      background-color: $primary-text-color;
+      font-weight: 700;
+      font-size: 16px;
+      color: $h2-color;
+    }
+
+    &--chevron {
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+      fill: $h2-color;
+    }
+  }
+}
+
+.link {
+  &--active {
+    color: $h2-color;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navigation-bar {
+    padding: 50px 5px 0 46px;
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+      margin-left: 0;
+      &--btn {
+        min-width: 175px;
+        padding: 15px;
+      }
+    }
+  }
+
+  .mobile-navigation {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+      fill: $h2-color;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 7vh;
+      right: 30vh;
+    }
+  }
+}
+
+.hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e17992;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  font-family: $main-font;
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.17;
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+}
+
+.hamburger-list-container {
+  margin: auto 20vh;
+  margin-top: 220px;
+
+  &__link--active {
+    color: $h2-color;
+  }
+
+  &__item {
+    margin-bottom: 70px;
+  }
+}
+
+// JS & toggle buttons
+
+.js-menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-navigation__button,
+.hamburger__close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger__close-btn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 73%;
+  top: 3%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hamburger__x {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: -16vh;
+  top: 0vh;
+  fill: $primary-text-color;
+}
+
+.hamburger__button {
+  position: absolute;
+  max-width: 500px;
+  top: 15vh;
+  left: 19vh;
+}
+
+@media screen and (min-width: 1199px) {
+  .mobile-navigation {
+    display: none;
+  }
 }
 
 // For removal
 
 .header {
-  background-color: salmon;
+  background-color: $primary-header-bg-color;
+  color: $primary-text-color;
+  font-family: $main-font;
 }
 
 .container {
-    min-width: 320px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-
-
-.numbers {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 10vh;
-  right: 20vh;
-  max-width: 200px;
-  align-items: flex-end;
-  text-align: end;
-  font-size: 1.5rem;
-  line-height: 1.14;
-  z-index: 1005;
-
-  &__ellipse {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    z-index: -1000;
-    right: -2vh;
-    &--two {
-      bottom: 40%;
-    }
-  }
-
-  &__text {
-    margin-bottom: 80px;
-  }
-
-  &__digits {
-    font-size: 3rem;
-  }
-}
-
-.woman-photo {
-  min-height: 232px;
-  min-width: 290px;
-  background-image: url(/images/header-woman-desktop-1x.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0vh;
-  right: 3vh;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .heading {
-    display: grid;
-    max-width: 30%;
-    column-gap: 15px;
-    padding-top: 100px;
-    padding-left: 70px;
+  display: grid;
+  max-width: 30%;
+  column-gap: 15px;
+  padding-top: 100px;
+  padding-left: 70px;
 
-    &__text {
+  &__text {
     grid-column: 1 / span 2;
     text-transform: uppercase;
     font-size: 38px;
     line-height: 1.14;
     margin-bottom: 20px;
+    font-family: $sec-font;
 
     &--accent {
-    font-size: 58px;
-    line-height: 0.9;
+      font-size: 58px;
+      line-height: 0.9;
+      color: $h2-color;
     }
-    }
+  }
 
-    &__button {
+  &__button {
     border-radius: 25px;
     border: none;
     padding: 10px;
     font-size: 14px;
     line-height: 1.28;
     max-width: 130px;
+
+    &--one {
+      background-color: $h2-color;
+      color: $primary-text-color;
     }
+
+    &--two {
+      color: $h2-color;
+    }
+  }
 }
 
 .hero {
-    position: relative;
+  position: relative;
 }
 
-@media screen and (max-width: 1200px) {
-
-.heading {
-padding-top: 40px;
-padding-left: 50px;
-}
-}
-
-.milk-picture {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    max-width: 50%;
-    min-height: 200px;
-    column-gap: 30px;
-    padding: 70px 0 50px 65px;
-
+@media screen and (max-width: 1199px) {
+  .heading {
+    padding-top: 40px;
+    padding-left: 50px;
+    max-width: 20vh;
     &__text {
-    max-width: 180px;
-    font-size: 14px;
-    line-height: 140%;
-    margin: auto 0;
+      font-size: 22px;
+      z-index: 1005;
+      letter-spacing: 3px;
+      &--accent {
+        font-size: 34px;
+      }
     }
 
     &__button {
+      z-index: 1005;
+      font-size: 8px;
+    }
+  }
+}
+
+.milk-picture {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 50%;
+  min-height: 200px;
+  column-gap: 30px;
+  padding: 70px 0 50px 45px;
+
+  &__text {
+    max-width: 185px;
+    font-size: 14px;
+    line-height: 140%;
+    margin: auto 0;
+  }
+
+  &__button {
     display: block;
     width: 10px;
     height: 10px;
-    fill: red;
-    }
+    fill: $h2-color;
+  }
 
-    &__ellipse {
+  &__ellipse {
     display: flex;
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $primary-text-color;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    }
+  }
 }
 
-@media screen and (max-width: 1200px) {
-    .milk-picture {
-padding: 20px 0 40px 40px;
-}
+@media screen and (max-width: 1199px) {
+  .milk-picture {
+    padding: 20px 0 0 40px;
+    &__picture {
+      max-width: 124px;
+      max-height: 126px;
+      z-index: 1005;
+    }
+    &__text {
+      z-index: 1005;
+      font-size: 8px;
+      max-width: 115px;
+    }
+    &__ellipse {
+      width: 18px;
+      height: 18px;
+    }
+    &__button {
+      width: 6px;
+      height: 6px;
+    }
+  }
 }
 
 .ice-cream {
-    position: relative;
-    left: 475px;
-    top: 52px;
+  position: relative;
+  left: 475px;
+  top: 52px;
 
-    &-ellipse {
+  &-ellipse {
     position: absolute;
     width: 570px;
     height: 538px;
     top: -4vh;
     right: 24vh;
-    fill: lightblue;
-    }
+    fill: $secondary-header-bg-color;
+  }
 
-    &-picture {
+  &-picture {
     position: absolute;
-    left: 47%;
+    right: 44vh;
     bottom: 0;
     z-index: 1001;
     height: 605px;
-    }
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
+  .ice-cream-picture {
+    height: 370px;
+    right: 32vh;
+  }
 
-.ice-cream-picture {
-    height: 512px;
-}
-
-.ice-cream-ellipse {
-right: 9vh;
-top: -9vh;
-}
+  .ice-cream-ellipse {
+    right: 6vh;
+    top: -7vh;
+    max-height: 350px;
+  }
 }
 
 .numbers {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 10vh;
-  right: 20vh;
+  top: 7vh;
+  right: 11vh;
   max-width: 200px;
   align-items: flex-end;
   text-align: end;
-  font-size: 1.5rem;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.28;
   z-index: 1005;
 
   &__ellipse {
+    fill: $primary-text-color;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -230,25 +395,52 @@ top: -9vh;
   }
 
   &__text {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   &__digits {
     font-size: 3rem;
+    font-family: $sec-font;
+    color: $h2-color;
   }
 }
 
 .woman-photo {
-  min-height: 232px;
-  min-width: 290px;
+  height: 232px;
+  width: 290px;
   background-image: url(/images/header-woman-desktop-1x.png);
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0vh;
-  right: 3vh;
+  right: 6vh;
 }
 
+@media screen and (max-width: 1199px) {
+  .numbers {
+    top: 2vh;
+    right: 3vh;
 
+    &__text {
+      font-size: 8px;
+      margin-bottom: 15px;
+    }
 
+    &__digits {
+      font-weight: 400;
+      font-size: 28px;
+    }
 
+    &__ellipse {
+      height: 16px;
+      width: 16px;
+      right: -1vh;
+    }
+  }
 
+  .woman-photo {
+    width: 190px;
+    height: 140px;
+    background-position: center;
+    background-size: contain;
+  }
+}
