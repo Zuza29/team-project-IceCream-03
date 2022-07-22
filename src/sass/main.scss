@@ -4,10 +4,12 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import "_header";
+@import "./components/header";
 @import "./basis/container";
 @import "./utils/variables";
 @import './example';
-@import "./conponents/how-its-made";
+@import "./components/how-its-made";
 @import "./basis/products";
 @import "./components/footer";
+@import "./components/icone";
+
