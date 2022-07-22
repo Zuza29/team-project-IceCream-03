@@ -238,6 +238,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 .products__ul {
@@ -333,9 +336,12 @@ body {
   background-color: #FFFFFF;
   border: none;
 }
+<<<<<<< Updated upstream
 .button-products:hover {
   cursor: pointer;
 }
+=======
+>>>>>>> Stashed changes
 .button-products__svg {
   width: 20px;
   height: 20px;
@@ -397,7 +403,11 @@ body {
   }
   .products__header2 {
     font-size: 20px;
+<<<<<<< Updated upstream
     margin-top: 165px;
+=======
+    margin-top: 125px;
+>>>>>>> Stashed changes
   }
   .products__figure {
     display: flex;
@@ -406,7 +416,10 @@ body {
   }
   .products__text {
     font-size: 14px;
+<<<<<<< Updated upstream
     width: 200px;
+=======
+>>>>>>> Stashed changes
   }
   .products__figcaption {
     width: 220px;
