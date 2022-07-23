@@ -75,6 +75,8 @@
         
     }
     &__text{
+        font-family: $base-text;
+        font-style: normal;
         flex-wrap: wrap;
         // width: 750px;
         // height: 52px;
@@ -84,7 +86,7 @@
         line-height: 30px;
         text-align: center;
         letter-spacing: 0.04em;
-        color: #000000;
+        color:$secondary-base-color;
         margin: 0;
         justify-content: center;
         align-items: center;
@@ -104,17 +106,19 @@
     width: 4px;
     height: 4px;
     margin:4px;
-    border:1px solid #C7133E;
+    border:1px solid $color-prim-dots;
     border-radius:50%;
-    background-color:#C7133E;
+    background-color:$color-prim-dots;
 }
 }
 .clients{
+font-family: $base-text;
+font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 37px;
 text-align: center;
-color: #000000;
+color:$secondary-base-color;
 margin: 0;
 @media screen and (max-width:320px) {
  width: 172px;
