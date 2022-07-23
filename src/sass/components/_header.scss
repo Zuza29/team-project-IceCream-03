@@ -24,7 +24,7 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: $primary-text-color;
+  color: #FFFFFF;
 }
 
 .navigation-bar {
@@ -63,24 +63,24 @@ a {
       border-radius: 22px;
       padding: 10px;
       width: 80%;
-      background-color: $primary-text-color;
+      background-color: #FFFFFF;
       font-weight: 700;
       font-size: 16px;
-      color: $h2-color;
+      color: #D41443;
     }
 
     &--chevron {
       width: 10px;
       height: 10px;
       margin-left: 10px;
-      fill: $h2-color;
+      fill: #D41443;
     }
   }
 }
 
 .link {
   &--active {
-    color: $h2-color;
+    color: #D41443;
   }
 }
 
@@ -105,7 +105,7 @@ a {
     display: flex;
     justify-content: space-between;
     &__icon {
-      fill: $h2-color;
+      fill: #D41443;
       position: absolute;
       width: 35px;
       height: 35px;
@@ -139,7 +139,7 @@ a {
   margin-top: 220px;
 
   &__link--active {
-    color: $h2-color;
+    color: #D41443;
   }
 
   &__item {
@@ -531,7 +531,7 @@ a {
     height: 538px;
     top: -4vh;
     right: 24vh;
-    fill: $secondary-header-bg-color;
+    fill: #FFF5F6;
   }
 
   &-picture {
@@ -591,7 +591,7 @@ a {
   &__digits {
     font-size: 3rem;
     font-family: $sec-font;
-    color: $h2-color;
+    color: #D41443;
   }
 }
 
@@ -641,7 +641,7 @@ a {
     display: flex;
     justify-content: space-between;
     &__icon {
-      fill: $h2-color;
+      fill: #D41443;
       position: absolute;
       width: 35px;
       height: 35px;
@@ -660,7 +660,7 @@ a {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
     font-family: $main-font;
-    color: $primary-text-color;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 30px;
     line-height: 1.17;
