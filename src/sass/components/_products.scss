@@ -41,11 +41,12 @@
 }
 
 &__header2{
+font-weight:400;
 font-size: 30px;
 line-height:1.13em;
 text-transform:uppercase;
-color:#fff;
-margin-top:125px;
+color: $primary-text-color;
+margin-top:165px;
 font-family:'Titan One';
 letter-spacing: 0.04em;
 }
@@ -68,9 +69,9 @@ letter-spacing: 0.04em;
     width: 6px;
     height: 6px;
     margin:4px;
-    border:1px solid white;
+    border:1px solid $primary-text-color;
     border-radius:50%;
-    background-color:#fff;
+    background-color:$primary-text-color;
 }
 
 &__text{
@@ -80,13 +81,13 @@ letter-spacing: 0.04em;
     letter-spacing: 0.04em;
     width: 241px;
     padding-bottom:32px;
-    color:#fff;
+    color:$primary-text-color;
     margin:auto;
     font-family:'DM Sans';
 }
 
 &__figcaption{
-    background-color:#ffb8ca;
+    background-color:$primary-header-bg-color;
     border-radius:24px;
     width: 329px;
     height: 525px;
@@ -109,13 +110,21 @@ letter-spacing: 0.04em;
     width: 40px;
     height: 40px;
     border-radius:50%;
-    background-color:white;
+    background-color:$primary-text-color;
     border:none;
+
+&:hover{
+    cursor:pointer;
+
+}
 
 &__svg{
     width: 20px;
     height: 20px;
-    fill:red;
+    fill:$logo-main-color;
+}
+&:hover{
+    cursor:pointer;
 }
 }
 
@@ -183,7 +192,6 @@ letter-spacing: 0.04em;
     &__image{
         width: 220px;
         height: 226px;
-        padding: 0px 16px;
         margin-bottom:-125px;
     }
     
@@ -197,9 +205,9 @@ letter-spacing: 0.04em;
         font-size:48px;
     }
     
-    .&__header2{
+    &__header2{
     font-size: 20px;
-    margin-top:125px;
+    margin-top:165px;
     }
     
     &__figure{
@@ -212,6 +220,7 @@ letter-spacing: 0.04em;
     
     &__text{
         font-size:14px;
+        width:200px;
     }
     
     &__figcaption{
