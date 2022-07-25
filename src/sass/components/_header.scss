@@ -1,4 +1,4 @@
-button:hover {
+.button:hover {
   cursor: pointer;
 }
 
@@ -409,9 +409,7 @@ a {
       line-height: 0.9;
       color: $h2-color;
     }
-
-    }
-  }
+}
 
   &__button {
     border-radius: 25px;
@@ -430,6 +428,7 @@ a {
       color: $h2-color;
     }
   }
+}
 
 .hero {
   position: relative;
@@ -479,8 +478,6 @@ a {
     height: 10px;
     fill: $h2-color;
   }
-    }
-
 
   &__ellipse {
     display: flex;
@@ -492,6 +489,7 @@ a {
     align-items: center;
     margin-top: 20px;
   }
+}
 
 
 
