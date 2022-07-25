@@ -201,16 +201,20 @@
 //mobile
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .footer {
-
-        &-name__h2 {
-            margin-bottom: 43px;
-            margin-left: 20px;
+            &-name {
+                flex-direction: column;
+    
+    
+                &__h2 {
+                    margin-bottom: 43px;
+                    margin-left: 20px;
+                }
+    
+                &__h3 {
+                    margin-left: 20px;
+                }
+            }
         }
-
-        &-name__h3 {
-            margin-left: 20px;
-        }
-    }
 
     .footer-socialmedia {
         flex-direction: column;
