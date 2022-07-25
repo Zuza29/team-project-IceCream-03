@@ -26,8 +26,8 @@
     line-height:1.14em;
     text-transform:uppercase;
     text-align:center;
-    color:#ffa5ba;
-    font-family:'Titan One';
+    color:$secondary-accent-color;
+    font-family:$accent-text;
 }
 
 &__header{
@@ -36,17 +36,17 @@
     letter-spacing:0.06em;
     text-align:center;
     text-transform:uppercase;
-    color:#d41443;
-    font-family:'Titan One';
+    color:$color-btn;
+    font-family:$accent-text;
 }
 
 &__header2{
 font-size: 30px;
 line-height:1.13em;
 text-transform:uppercase;
-color:#fff;
+color:$white-btn;
 margin-top:125px;
-font-family:'Titan One';
+font-family:$accent-text;
 letter-spacing: 0.04em;
 }
 
@@ -68,9 +68,9 @@ letter-spacing: 0.04em;
     width: 6px;
     height: 6px;
     margin:4px;
-    border:1px solid white;
+    border:1px solid $base-color;
     border-radius:50%;
-    background-color:#fff;
+    background-color:$base-color;
 }
 
 &__text{
@@ -80,24 +80,24 @@ letter-spacing: 0.04em;
     letter-spacing: 0.04em;
     width: 241px;
     padding-bottom:32px;
-    color:#fff;
+    color:$base-color;
     margin:auto;
-    font-family:'DM Sans';
+    font-family:$base-text;
 }
 
 &__figcaption{
-    background-color:#ffb8ca;
+    background-color:$first-panel-bg;
     border-radius:24px;
     width: 329px;
     height: 525px;
     z-index:-1;
     text-align:center;
     &--color2{
-        background-color:#F0d1a5;
+        background-color:$second-panel-bg;
     }
     
     &--color3{
-        background-color:#c2e297;
+        background-color:$third-panel-bg;
     }
     
     
@@ -109,13 +109,13 @@ letter-spacing: 0.04em;
     width: 40px;
     height: 40px;
     border-radius:50%;
-    background-color:white;
+    background-color:$white-btn;
     border:none;
 
 &__svg{
     width: 20px;
     height: 20px;
-    fill:red;
+    fill:$color-btn;
 }
 }
 
@@ -158,11 +158,11 @@ letter-spacing: 0.04em;
         width: 280px;
         height: 485px;
         &--color2{
-            background-color:#F0d1a5;
+            background-color:$second-panel-bg;
         }
         
         &--color3{
-            background-color:#c2e297;
+            background-color:$third-panel-bg;
         }
     }
 }
@@ -197,7 +197,7 @@ letter-spacing: 0.04em;
         font-size:48px;
     }
     
-    .&__header2{
+    &__header2{
     font-size: 20px;
     margin-top:125px;
     }
@@ -219,11 +219,11 @@ letter-spacing: 0.04em;
         height: 485px;
    
    &--color2{
-            background-color:#F0d1a5;
+            background-color:$second-panel-bg;
         }
         
     &--color3{
-            background-color:#c2e297;
+            background-color:$third-panel-bg;
         }
         
     }
