@@ -307,6 +307,10 @@
         }
     }
 
+    .line{
+        min-width: 157px;
+    }
+
     .menu {
 
         &__name {
@@ -374,5 +378,20 @@
     .option--margin {
         margin-top: 10px;
         margin-bottom: 113px;
+    }
+
+    .line{
+        max-width: 179px;
+    }
+
+    .menu {
+    
+        &__offer {
+            max-width: 179px;
+        }
+    
+        &__communication {
+            max-width: 179px;
+        }
     }
 }
