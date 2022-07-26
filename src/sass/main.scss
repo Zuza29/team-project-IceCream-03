@@ -5,13 +5,17 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import "./utils/variables";
+@import "_header";
+@import "./basis/container";
 @import "./components/header";
 @import "./basis/container";
 
-@import './example';
 @import "./components/about";
 @import "./components/products";
-@import "./basis/products";
+
+@import "./components/about";
+@import "./components/products";
+
 @import "./components/footer";
 @import "./components/icone";
 @import "./components/gallery";
