@@ -25,11 +25,10 @@
   padding-left: 15px;
 }
 
-.section-contact {
-  background-color: #FFF5F6;
-  background-image: url(/src/images/footer/sectionbg123.png);
-}
-
+/*.section-contact {
+    background-color: #FFF5F6;
+    background-image: url(/images/footer/sectionbg123.png);
+}*/
 .contact {
   background-color: #FFF5F6;
   list-style: none;
