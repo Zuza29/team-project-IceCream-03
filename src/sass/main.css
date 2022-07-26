@@ -25,10 +25,11 @@
   padding-left: 15px;
 }
 
-/*.section-contact {
-    background-color: #FFF5F6;
-    background-image: url(/images/footer/sectionbg123.png);
-}*/
+.section-contact {
+  background-color: #FFF5F6;
+  /*background-image: url(/images/footer/sectionbg123.png);*/
+}
+
 .contact {
   background-color: #FFF5F6;
   list-style: none;
@@ -177,7 +178,7 @@
 
 .line {
   border-top: 1px solid #E1E1E1;
-  width: 234px;
+  max-width: 234px;
 }
 
 @media screen and (min-width: 1200px) {
