@@ -1,41 +1,76 @@
-/*Colors*/
 
-/* Body background color*/
+/*text colors*/
+$base-color: #fff;
+$secondary-base-color: #000;
+$light-text-color: #907E82;
+
+$accent-color: #D41443;
+$secondary-accent-color: #FFA5BA;
+
+/*products + contacts*/
+$first-panel-bg: #FFB8CA;
+$second-panel-bg: #F0D1A5; /*cafe*/
+$third-panel-bg: #C2E297;  /*food truck*/
+
+/*bg-how it's made + gallery +contacts +footer*/
+$rectangle-bg: #FFF5F6;
+
+/*quote + contacts*/
+$color-elements: #E1E1E1;
+$color-prim-dots: #C7133E;
+$color-sec-dots: #D9D9D9;
+$color-home: #D31342;
+
+/*buttons project*/
+$color-btn:#D41443;
+$white-btn:#FFFFFF;
+$contact-color-btn: #D41342;
+
+/*btn extra*/
+$primary-btn: #C7133E;
+$secondary-btn: #ECEBEB;
+
+/*footer*/
+$color-social-icon: #FEA5BB;
+$social-icon: #D41443; /*extra*/
+
+/*fonts*/
+
+$base-text: 'DM Sans', sans-serif;
+$accent-text: 'Titan One', cursive;
+
+// /*Colors*/
+
 $primary-body-bg-color: #E5E5E5;
 
 $secondary-body-bg-color: #FFF5F6;
 
-/* Main text color*/
+
 $text-color: #000000;
 
-/*Primary text color*/
+
 $primary-text-color: #FFFFFF;
 
-/*Secondary text color*/
+
 $secondary-text-color: #907E82;
 
-/* Header background color*/
-$primary-header-bg-color: #FFB8CA;
 
+$primary-header-bg-color: #FFB8CA;
 $secondary-header-bg-color: #FFA5BA;
 
-/* hover color */
+
 $hover-socialmedia-color: #D41443;
-$hover-button-color: #D41342;
-
-
-
-
-
+$over-button-color: #D41342;
 
 /* H2 and H3 color */
 $h2-color: #D41443;
 
 $h3-color: #FFA5BA;
 
-
-
-
 /* Logo main color */
 $logo-main-color: #D41443;
 
+// Fonts 
+
+$main-font: 'DM Sans', sans-serif;
+$sec-font: 'Titan One', cursive;

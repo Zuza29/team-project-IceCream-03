@@ -1,0 +1,168 @@
+/* ADVANTAGES */
+.advantages{
+    display: block;
+    &__item{
+        position: relative;
+        padding-top: 75px;
+        width: 330px;
+
+        &:nth-child(n + 2){
+            margin-top: 36px;
+        }    
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background-repeat: no-repeat;
+            min-width: 33px;
+            min-height: 50px;
+            background-size: 33px 50px;
+            background-image: url("/src/images/advantages/icon1.png");
+            @media screen and (-webkit-min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+               background-image: url("/src/images/advantages/icon1.png "), url("/src/images/advantages/icon1@2x.png");
+            }
+        }
+
+        &:nth-child(2)::after{
+            width: 50px;
+            height: 50px;
+            background-size: 50px 50px;
+            background-image: url("/src/images/advantages/icon2.png");
+            @media screen and (-webkit-min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url("/src/images/advantages/icon2.png "), url("/src/images/advantages/icon2@2x.png");
+            }
+        }
+
+        &:nth-child(3)::after{
+            width: 44px;
+            background-size: 44px 50px;
+            background-image: url("/src/images/advantages/icon3.png");
+            @media screen and (-webkit-min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url("/src/images/advantages/icon3.png "), url("/src/images/advantages/icon3@2x.png");
+            }
+        }
+
+        &:not(:last-child){
+            margin-right: 60px;
+        }
+    }
+    
+    &__text{ 
+        width: 230px; 
+        font-weight: 700;   
+        font-size: 12px;
+        line-height: 1.666;
+        font-family: 'DM Sans';    
+        color: #000000;
+    }
+    
+    &__numbers{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.138;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        font-family: 'Titan One'; 
+        color: $hover-socialmedia-color;
+    }
+}
+
+.section{
+    &-advantages{
+        width: 100%;
+        background-color: $secondary-body-bg-color;
+        & .container{
+            padding: 0 15px 145px 15px;
+            background-color: $secondary-body-bg-color;
+        }
+    }    
+    
+    &__title--display-none{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .advantages{
+        display: flex;
+        &__item{
+            padding-top: 86px;
+            width: 330px;
+            &:nth-child(n + 2){
+                margin-top: 0px;
+            }   
+        }
+        
+        &__numbers{
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 1.145;
+            font-family: 'Titan One';
+        }
+
+        &__text{
+            font-size: 14px;
+            line-height: 1.714;
+            letter-spacing: 0.02em;
+        }        
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    .advantages{
+        display: flex;
+        
+        &__item{
+            padding-top: 86px;
+            width: 330px;
+
+            &:nth-child(n + 2){
+                margin-top: 0px;
+            }   
+        }
+        
+        &__text{
+            font-size: 16px;
+            line-height: 1.75;
+            letter-spacing: 0.02em;
+        }
+        
+        &__numbers{
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 1.137;
+        }
+    }
+
+    
+    
+    .section{
+        &-advantages{
+            background-color: $secondary-body-bg-color;
+            & .container{
+                padding: 0 15px 310px 15px;
+            }
+        }
+        
+        &__title--display-none{
+            display: none;
+        }
+    }
+}

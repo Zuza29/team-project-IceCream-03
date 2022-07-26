@@ -1,0 +1,378 @@
+//mobile//
+
+.section-contact {
+    background-color: #FFF5F6;
+    background-image: url(/src/images/footer/sectionbg123.png);
+}
+
+.contact {
+    background-color: #FFF5F6;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: -15px -15px;
+    justify-content: space-between;
+
+    &__item {
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+        border-radius: 24px 24px 24px 24px;
+        margin: 15px 15px;
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
+        background-color: #FFFFFF;
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__name {
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #FFFFFF;
+    }
+
+    &__city {
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    &__offer {
+        color: #907E82;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    &__days {
+        display: flex;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #000000;
+
+        &--margin {
+            margin-top: 32px;
+        }
+    }
+
+    &__hour {
+        display: flex;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #FFA5BA;
+
+        &--margin1 {
+            margin-bottom: 15px;
+        }
+
+        &--margin2 {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__communication {
+        text-align: left;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #907E82;
+        margin-bottom: 62px;
+        margin-top: 32px;
+    }
+
+    &__border {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 73px;
+        height: 28px;
+        cursor: pointer;
+        border: 0px;
+        box-shadow: 0 px 4 px 4 px rgba (0, 0, 0, 0, 15);
+        border-radius: 6px;
+        margin-top: 51px;
+        margin-bottom: 32px;
+        background-color: #F0D1A5;
+
+        &--color {
+            background-color: #C2E297;
+            width: 138px;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 198px;
+    height: 44px;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 0 px 4 px 4 px rgba (0, 0, 0, 0, 15);
+    border-radius: 22px;
+    margin-top: 54px;
+    background-color: #D41342;
+
+    &--background {
+        background-color: #FFFFFF;
+    }
+
+    &__icon {
+        margin-left: 14px;
+        fill: #FFFFFF;
+
+        &--color {
+            fill: #D41342;
+        }
+    }
+
+    &__name {
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: #FFFFFF;
+
+        &--color {
+            color: #D41342;
+        }
+    }
+}
+
+.line {
+    border-top: 1px solid #E1E1E1;
+    width: 234px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__item {
+            margin: 0 15px;
+            flex: 0 0 calc(33.3% - 30px);
+            max-width: calc(33.3% - 30px);
+        }
+    }
+
+    .menu {
+
+        &__name {
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+            color: #FFFFFF;
+        }
+
+        &__city {
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        &__offer {
+            color: #907E82;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        &__days {
+            display: flex;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+            color: #000000;
+
+            &--margin {
+                margin-top: 32px;
+            }
+        }
+
+        &__hour {
+            display: flex;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+            color: #FFA5BA;
+
+            &--margin1 {
+                margin-bottom: 15px;
+            }
+
+            &--margin2 {
+                margin-bottom: 32px;
+            }
+        }
+
+        &__communication {
+            text-align: left;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.88;
+            color: #907E82;
+            margin-bottom: 62px;
+            margin-top: 32px;
+        }
+    }
+
+    .option {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 198px;
+        height: 44px;
+        cursor: pointer;
+        border: 0px;
+        box-shadow: 0 px 4 px 4 px rgba (0, 0, 0, 0, 15);
+        border-radius: 22px;
+        margin-top: 86px;
+        margin-bottom: 165px;
+        background-color: #D41342;
+        margin-right: 15px;
+
+        &--background {
+            background-color: #FFFFFF;
+        }
+    }
+
+    .menu {
+        margin-left: 43px;
+        margin-right: 43px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__item {
+            margin: 0 15px;
+            flex: 0 0 calc(33.3% - 30px);
+            max-width: calc(33.3% - 30px);
+        }
+    }
+
+    .menu {
+
+        &__name {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        &__city {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        &__offer {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        &__days {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        &__hour {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        &__communication {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+    }
+
+    .option {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 198px;
+        height: 44px;
+        cursor: pointer;
+        border: 0px;
+        box-shadow: 0 px 4 px 4 px rgba (0, 0, 0, 0, 15);
+        border-radius: 22px;
+        margin-top: 81px;
+        margin-bottom: 165px;
+        background-color: #D41342;
+        margin-right: 15px;
+
+        &--background {
+            background-color: #FFFFFF;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+//mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .option--margin {
+        margin-top: 10px;
+        margin-bottom: 113px;
+    }
+}
