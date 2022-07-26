@@ -4,24 +4,23 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import "./utils/variables";
 @import "_header";
 @import "./basis/container";
-<<<<<<< Updated upstream
-@import "./utils/variables";
-@import './example';
-@import "./components/how-its-made";
-@import "./components/products";
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-
+@import "./components/header";
+@import "./basis/container";
 
 @import "./components/about";
 @import "./components/products";
->>>>>>> Stashed changes
+
+@import "./components/about";
+@import "./components/products";
+
 @import "./components/footer";
+@import "./components/icone";
+@import "./components/gallery";
+@import "./components/advantages";
+@import "./components/contact";
+
+
+
