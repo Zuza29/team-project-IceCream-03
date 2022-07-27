@@ -5,7 +5,7 @@
     &__item{
         position: relative;
         padding-top: 75px;
-        width: 139px;
+        width: 330px;
 
         &:nth-child(n + 2){
             margin-top: 36px;
@@ -158,7 +158,7 @@
         &-advantages{
             background-color: $secondary-body-bg-color;
             & .container{
-                padding: 0 15px 310px 15px;
+                padding: 0 15px 139px 15px;
             }
         }
         
