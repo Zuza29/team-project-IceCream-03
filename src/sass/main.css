@@ -18,7 +18,7 @@
 /* Logo main color */
 .container {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   width: 100%;
   padding-right: 15px;
@@ -520,11 +520,12 @@
   max-width: 234px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 132px;
   }
   .contact__item {
     margin: 0 15px;
@@ -619,7 +620,7 @@
     flex-direction: row;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contact {
     display: flex;
     flex-direction: row;
@@ -779,7 +780,7 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .page {
     display: flex;
     justify-content: space-between;
@@ -825,7 +826,7 @@
     color: #000000;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .sign {
     margin-bottom: 18px;
     margin-top: 28px;
