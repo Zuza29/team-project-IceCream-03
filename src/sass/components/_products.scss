@@ -8,7 +8,7 @@
  &__ul{
     display:grid;
     grid-template-columns: 335px 335px 335px;
-    column-gap:29px;
+    column-gap:60px;
     list-style:none;
 }
 
@@ -178,6 +178,8 @@ letter-spacing: 0.04em;
     &__ul{
         grid-template-columns: 220px 220px 220px;
         padding:0;
+        column-gap:20px;
+        margin-left:44px;
     }
     
     &__image{
@@ -212,6 +214,7 @@ letter-spacing: 0.04em;
     
     &__text{
         font-size:14px;
+        width:220px;
     }
     
     &__figcaption{

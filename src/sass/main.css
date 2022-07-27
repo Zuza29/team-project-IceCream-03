@@ -578,8 +578,8 @@
 .products__ul {
   display: grid;
   grid-template-columns: 335px 335px 335px;
-  -moz-column-gap: 29px;
-       column-gap: 29px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
   list-style: none;
 }
 .products__image {
@@ -711,6 +711,9 @@
   .products__ul {
     grid-template-columns: 220px 220px 220px;
     padding: 0;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    margin-left: 44px;
   }
   .products__image {
     width: 220px;
@@ -735,6 +738,7 @@
   }
   .products__text {
     font-size: 14px;
+    width: 220px;
   }
   .products__figcaption {
     width: 220px;
