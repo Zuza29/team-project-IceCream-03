@@ -28,6 +28,7 @@
 /* ADVANTAGES */
 .advantages {
   display: block;
+  list-style: none;
 }
 .advantages__item {
   position: relative;
