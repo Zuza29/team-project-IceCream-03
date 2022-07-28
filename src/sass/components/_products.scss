@@ -50,6 +50,14 @@ color:$white-btn;
 margin-top:125px;
 font-family:$accent-text;
 letter-spacing: 0.04em;
+padding-top:30px;
+&::after{
+    content:"...";
+    display:block;
+    letter-spacing: 6px;
+    color:white;
+    margin:30px 0px;
+}
 }
 
 &__figure{
@@ -134,7 +142,8 @@ letter-spacing: 0.04em;
     &__image{
         width: 249px;
         height: 252px;
-        padding: 0px 16px;
+        padding: 0;
+        margin-left:16px;
     }
     
   
@@ -148,6 +157,7 @@ letter-spacing: 0.04em;
     
     &__header2{
     font-size: 20px;
+    padding-top:20px;
     }
     
         
@@ -187,7 +197,7 @@ letter-spacing: 0.04em;
     &__image{
         width: 220px;
         height: 226px;
-        padding: 0px 16px;
+        padding: 0;
         margin-bottom:-125px;
     }
     
@@ -204,6 +214,7 @@ letter-spacing: 0.04em;
     &__header2{
     font-size: 20px;
     margin-top:125px;
+    padding-top:30px;
     }
     
     &__figure{
