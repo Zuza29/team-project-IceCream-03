@@ -1,0 +1,61 @@
+// Header animations
+
+// Rotation animation
+
+.rotation {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+// Bounce animation
+
+.bounce {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+// Scale transition
+
+.grow {
+  display: block;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// End of header animations
