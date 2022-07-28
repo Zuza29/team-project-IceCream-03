@@ -28,6 +28,16 @@ a {
     color: $primary-text-color;
 }
 
+// Scale transition
+
+       .grow {
+        display: block;
+        transition: all .2s ease-in-out; 
+
+        &:hover {
+          transform: scale(1.2);
+        } 
+    }
 
 // Desktop
 // Header
@@ -101,6 +111,10 @@ a {
        .navigation-bar__button--btn:hover .navigation-bar__button--chevron {
         stroke: $primary-text-color;
         background-color: transparent;
+       }
+
+       .navigation-bar__menu .link:hover {
+        color: $h2-color;
        }
 
 
