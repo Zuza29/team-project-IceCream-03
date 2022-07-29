@@ -15,7 +15,7 @@
     transform: translate(-50%, -50%) scale(1.25);
     background-color: $h2-color;
     width: 60%;
-height: 609px;
+height: 660px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -32,12 +32,19 @@ height: 609px;
     z-index: 5000;
 }
 
+.modal-form {
+  color: $primary-text-color;
+}
+
 .modal-form__heading {
     font-family: $sec-font;
     text-align: center;
     padding: 10px;
     font-weight: 300;
+    color: $secondary-header-bg-color;
+    font-size: 25px;
 }
+
 
 
 // Desktop styles 
@@ -56,7 +63,7 @@ height: 609px;
     top: 50%;
     transform: translate(-50%, -50%) scale(1.25);
     width: 528px;
-    height: 581px;
+    min-height: 650px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -72,46 +79,54 @@ height: 609px;
 } }
 
 
-// Mobile styles
-
 .modal-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
 
   &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    color: $secondary-header-bg-color;
     font-size: 12px;
     line-height: 1.16;
-    font-family: $main-font;
   }
 }
 
 .modal-form__label {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--text-grey);
+  color: $primary-text-color;
+  padding-left: 60px;
   margin-bottom: 4px;
   margin-top: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+
+    &--choice {
+  display: grid;
+} 
+
+&--accent {
+  font-size: 20px;
+  color: $primary-header-bg-color;
+  font-family: $sec-font;
+  margin-bottom: 15px;
+}
 }
 
+.modal-form__label:focus-within svg {
+  fill: var(--blue);
+}
 
 .modal-form__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-width: 80%;
-height: 40px;
-  padding-left: 42px;
-    
+  width: 80%;
+  height: 40px;
+  padding-left: 60px;
 }
 
 .modal-form__textarea {
-width: 80%;
-height: 120px;
+  height: 120px;
+  width: 80%;
   padding: 12px 16px;
     resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -120,7 +135,7 @@ height: 120px;
 
 .modal-form__input,
 .modal-form__textarea {
-  color: var(--text-grey);
+  color: $h2-color;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -140,19 +155,21 @@ height: 120px;
 }
 
 .modal-form__button {
-  width: 200px;
-  height: 50px;
-  background: var(--blue);
+  border: none;
+      border-radius: 22px;
+      padding: 10px;
+      width: 60%;
+      background-color: $primary-text-color;
+      font-weight: 700;
+      font-size: 16px;
+      color: $h2-color;
+      font-family: $sec-font;
+  height: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #fff;
   margin: auto;
-  margin-top: 30px;
   border: none;
 
   &:hover {
@@ -208,148 +225,7 @@ height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 2px;
   }
-}
-
-
-
-// Desktop styles 
-
-@media screen and (min-width: 1200px) {
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    line-height: 1.16;
-  }
-}
-
-.modal-form__label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--text-grey);
-  padding-left: 40px;
-  margin-bottom: 4px;
-  margin-top: 10px;
-}
-
-.modal-form__label:focus-within svg {
-  fill: var(--blue);
-}
-
-.modal-form__input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  width: 448px;
-  height: 40px;
-  padding-left: 42px;
-}
-
-.modal-form__textarea {
-  height: 120px;
-  width: 448px;
-  padding: 12px 16px;
-    resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.modal-form__input,
-.modal-form__textarea {
-  color: var(--text-grey);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  display: block;
-
-  &:hover,
-  &:focus {
-    border: 1px solid var(--blue);
-    border-radius: 4px;
-  }
-
-  &:focus-visible {
-    outline: none;
-    border: 1px solid var(--blue);
-  }
-}
-
-.modal-form__button {
-  width: 200px;
-  height: 50px;
-  background: var(--blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #fff;
-  margin: auto;
-  margin-top: 30px;
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-  padding-right: 40px;
-  margin-top: 0;
-}
-
-.checkbox-container__link {
-  color: var(--blue);
-  text-decoration: underline;
-}
-
-.checkbox-container__default {
-  position: absolute;
-  opacity: 0;
-  width: 448px;
-  height: 40px;
-}
-
-.checkbox-container__default:checked + .checkbox-container__label::before {
-  background-color: var(--blue);
-  border: none;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMyAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuOTU3MDMgNC43NTE2NkwxLjg4ODI1IDQuNjg2MDRMMS44MTkyMyA0Ljc1MTQxTDAuOTMxMjMgNS41OTI1OEwwLjg1NDg1OCA1LjY2NDkyTDAuOTMwOTc0IDUuNzM3NTNMNC40MjY3MSA5LjA3MjM2TDQuNDk1NzQgOS4xMzgyTDQuNTY0NzYgOS4wNzIzNkwxMi4wNjkgMS45MTM1MkwxMi4xNDQ5IDEuODQxMTZMMTIuMDY5IDEuNzY4ODFMMTEuMTg3MyAwLjkyNzY0NEwxMS4xMTgzIDAuODYxODI2TDExLjA0OTMgMC45Mjc2MTFMNC40OTU3NyA3LjE3MzUzTDEuOTU3MDMgNC43NTE2NloiIGZpbGw9IndoaXRlIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjAuMiIvPgo8L3N2Zz4K);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.checkbox-container__label {
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--text-grey);
-  padding-left: 40px;
-  margin-bottom: 4px;
-  margin-top: 10px;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-left: 0;
-    margin-right: 7px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 2px;
-  }
-} }
+} 
 
 .modal__close-btn {
     position: absolute;
@@ -371,4 +247,4 @@ height: 120px;
     &:focus svg {
 fill: var(--blue);
     }
-}
+  }
