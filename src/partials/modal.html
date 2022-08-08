@@ -1,0 +1,80 @@
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__x">
+            <use href="./images/icons.svg#x"></use>
+          </svg>
+        </button>
+
+        <form
+          class="modal-form"
+          name="signup-form"
+          method="POST"
+        >
+          <h3 class="modal-form__heading">Place your order</h3>
+          <label class="modal-form__label modal-form__label--choice" for="scoop_number"
+            ><span class="modal-form__label--accent">Ice cream set</span>
+            <label>
+    <input type="radio" name="scoop_number" value="milky" checked />
+    Milky (10 milk-based scoops: $10)
+  </label>
+  <label>
+    <input type="radio" name="scoop_number" value="water" />
+    Fruity (10 water-based scoops: $10)
+  </label>
+  <label>
+    <input type="radio" name="scoop_number" value="mixed" />
+    Mixed (7 each: $12)
+  </label>
+   <label>
+    <input type="radio" name="scoop_number" value="party" />
+    Let's Have A Party (15 each: $20)
+  </label>
+          </label>
+          <label class="modal-form__label modal-form__label--choice" for="coffee"
+            ><span class="modal-form__label--accent">Ice coffee</span>
+            <label>
+    <input type="checkbox" name="coffee" value="regular" checked required />
+    Regular ($5)
+  </label>
+  <label>
+    <input type="checkbox" name="coffee" value="milk"  />
+    Vegan milk (+ $2)
+  </label>
+  <label>
+    <input type="checkbox" name="coffee" value="espresso" />
+    Extra espresso (+ $1)
+  </label></label>
+          <label class="modal-form__label" for="user_email"
+            ><span class="modal-form__label--accent">Your e-mail address</span>
+            <input class="modal-form__input" type="email" name="email" id="user_email" required />
+          </label>
+          <label class="modal-form__label"><span class="modal-form__label--accent">
+        Additional information</span>
+            <textarea
+            class="modal-form__textarea"
+              type="text"
+              name="comment"
+              placeholder="Write your thoughts here..."
+            ></textarea>
+          </label>
+
+           <div class="checkbox-container">
+            <input
+              class="checkbox-container__default"
+              type="checkbox"
+              name="consent"
+              value="consent"
+              required
+            />
+
+            <label for="consent" class="checkbox-container__label">
+              I accept the
+              <a href="#rules" class="checkbox-container__link">Terms of Conducts</a> and
+              <a href="#privacypolicy" class="checkbox-container__link">Privacy Policy</a>.
+            </label>
+          </div>
+          <button class="modal-form__button" type="submit">Buy now</button>
+        </form>
+      </div>
+    </div>

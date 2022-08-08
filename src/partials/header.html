@@ -4,13 +4,16 @@
       <img src="./images/logo.png" alt="logo" />
     </div>
     <ul class="navigation-bar__menu">
-      <li><a class="link link--active" href="index.html"> Home</a></li>
-      <li><a class="link" href="#"> About us</a></li>
-      <li><a class="link" href="#how-its-made"> How it's made?</a></li>
-      <li><a class="link" href="#products"> Our products</a></li>
-      <li><a class="link" href="#contact"> Contact</a></li>
+      <li><a class="link link--active grow" href="index.html"> Home</a></li>
+      <li><a class="link grow" href="#"> About us</a></li>
+      <li><a class="link grow" href="#how-its-made"> How it's made?</a></li>
+      <li><a class="link grow" href="#products"> Our products</a></li>
+      <li><a class="link grow" href="#contact"> Contact</a></li>
     </ul>
     <div class="mobile-navigation">
+      <div class="mobile-navigation__logo">
+      <img src="./images/logo.png" alt="logo" />
+    </div>
       <button class="mobile-navigation__button js-open-menu">
         <svg class="mobile-navigation__icon">
           <use href="./images/icons.svg#icon-menu"></use>
@@ -18,7 +21,7 @@
       </button>
     </div>
     <div class="navigation-bar__button">
-      <button type="button" class="navigation-bar__button--btn">
+      <button type="button" class="navigation-bar__button--btn grow" data-modal-open>
         Buy now
         <svg class="navigation-bar__button--chevron">
           <use href="./images/icons.svg#chevron"></use>
@@ -32,24 +35,24 @@
         Ice cream made with
         <span class="heading__text--accent">passion</span>
       </h1>
-      <button type="button" class="heading__button heading__button--one"><a href="#products">
+      <button type="button" class="heading__button heading__button--one grow"><a href="#products">
           Products</a>
       </button>
-      <button type="button" class="heading__button heading__button--two"><a href="#howitsmade">
+      <button type="button" class="heading__button heading__button--two grow"><a href="#howitsmade">
           How it's made?</a>
       </button>
     </div>
     <div class="milk-picture">
-      <img src="./images/header-milk-desktop-1x.png" class="milk-picture__picture" alt="A jug of milk" />
+      <img src="./images/header-milk-desktop-1x.png" class="milk-picture__picture bounce" alt="A jug of milk" />
       <div class="milk-picture__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et.
-        <a class="milk-picture__ellipse" href="#"><svg class="milk-picture__button">
+        <a class="milk-picture__ellipse grow" href="#"><svg class="milk-picture__button">
             <use href="./images/icons.svg#arrow"></use>
           </svg></a>
       </div>
     </div>
-    <img class="ice-cream-picture" src="./images/header-cone-desktop-1x.png" alt="An ice-cream cone" />
+    <img class="ice-cream-picture bounce" src="./images/header-cone-desktop-1x.png" alt="An ice-cream cone" />
     <svg class="ice-cream-ellipse">
       <use href="./images/icons.svg#ellipse"></use>
     </svg>
@@ -57,47 +60,16 @@
       <svg class="numbers__ellipse numbers__ellipse--one">
         <use href="./images/icons.svg#ellipse"></use>
       </svg>
-      <span class="numbers__digits numbers__digits--one">16</span><span
+      <span class="numbers__digits numbers__digits--one grow rotation">16</span><span
         class="numbers__text numbers__text--one">cafes</span>
       <svg class="numbers__ellipse numbers__ellipse--two">
         <use href="./images/icons.svg#ellipse"></use>
       </svg>
-      <span class="numbers__digits numbers__digits--two">23</span><span class="numbers__text numbers__text--two">food
+      <span class="numbers__digits numbers__digits--two grow rotation">23</span><span class="numbers__text numbers__text--two">food
         trucks</span>
     </div>
     <div class="woman-photo"></div>
   </div>
 </header>
-<div class="hamburger js-menu-container">
-  <button class="hamburger__close-btn js-close-menu">
-    <svg class="hamburger__x">
-      <use href="./images/icons.svg#x"></use>
-    </svg>
-  </button>
-  <button type="button" class="navigation-bar__button--btn hamburger__button">
-    Buy now
-    <svg class="navigation-bar__button--chevron">
-      <use href="./images/icons.svg#chevron"></use>
-    </svg>
-  </button>
-  <div class="hamburger-list-container">
-    <ul>
-      <li class="hamburger-list-container__item">
-        <a href="#" class="hamburger-list-container__link hamburger-list-container__link--active">Home</a>
-      </li>
-      <li class="hamburger-list-container__item">
-        <a href="#" class="hamburger-list-container__link">About us</a>
-      </li>
-      <li class="hamburger-list-container__item">
-        <a href="#" class="hamburger-list-container__link">How it's made?</a>
-      </li>
-      <li class="hamburger-list-container__item">
-        <a href="#" class="hamburger-list-container__link">Our products</a>
-      </li>
-      <li class="hamburger-list-container__item">
-        <a href="#" class="hamburger-list-container__link">Contact</a>
-      </li>
-    </ul>
-  </div>
-</div>
+
 

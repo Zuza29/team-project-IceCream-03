@@ -1,541 +1,476 @@
-
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 :hover,
 :focus {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: $primary-text-color;
-}
-
-.container {
-    min-width: 320px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  color: $primary-text-color;
 }
 
 // Desktop
 // Header
 .header {
-    background-color: $primary-header-bg-color;
-    color: $primary-text-color;
-    font-family: $main-font;
+  background-color: $primary-header-bg-color;
+  color: $primary-text-color;
+  font-family: $main-font;
 }
 
 // Hero
 .hero {
-    position: relative;
+  position: relative;
 }
 
 // Nav bar
 .navigation-bar {
-    display: grid;
-    grid-template-columns: 1.3fr 3fr 1.2fr;
+  display: grid;
+  grid-template-columns: 1.3fr 3fr 1.2fr;
+  align-items: center;
+  padding: 50px 115px 0px 46px;
+  position: relative;
+  z-index: 1005;
+  line-height: 1.31;
+  font-weight: 700;
+
+  &__logo {
+    max-width: 250px;
+    max-height: 50px;
+  }
+
+  &__logo,
+  &__button {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 50px 115px 0px 46px;
-    position: relative;
-    z-index: 1005;
-    line-height: 1.31;
-    font-weight: 700;
+  }
 
-    &__logo {
-        max-width: 250px;
-        max-height: 50px;
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+  }
+
+  &__button {
+    margin-left: 20px;
+
+    &--btn {
+      border: none;
+      border-radius: 22px;
+      padding: 10px;
+      width: 80%;
+      background-color: $primary-text-color;
+      font-weight: 700;
+      font-size: 16px;
+      color: $h2-color;
     }
 
-    &__logo,
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &--chevron {
+      width: 20px;
+      height: 11px;
+      stroke: #d41443;
+      stroke-width: 6px;
     }
+  }
+}
 
-    &__menu {
-        display: flex;
-        justify-content: space-around;
-        min-width: 400px;
-    }
+.navigation-bar__button--btn:hover {
+  background-color: $h2-color;
+  color: $primary-text-color;
+}
 
-    &__button {
-        margin-left: 20px;
+.navigation-bar__button--btn:hover .navigation-bar__button--chevron {
+  stroke: $primary-text-color;
+  background-color: transparent;
+}
 
-        &--btn {
-            border: none;
-            border-radius: 22px;
-            padding: 10px;
-            width: 80%;
-            background-color: $primary-text-color;
-            font-weight: 700;
-            font-size: 16px;
-            color: $h2-color;
-        }
-
-        &--chevron {
-            width: 10px;
-            height: 10px;
-            margin-left: 10px;
-            fill: $h2-color;
-        }
-    }
+.navigation-bar__menu .link:hover {
+  color: $h2-color;
 }
 
 .link {
-    &--active {
-        color: $h2-color;
-    }
+  &--active {
+    color: $h2-color;
+  }
 }
 
 // Heading
 .heading {
-    display: grid;
-    max-width: 30%;
-    column-gap: 15px;
-    padding-top: 100px;
-    padding-left: 70px;
+  display: grid;
+  max-width: 30%;
+  column-gap: 15px;
+  padding-top: 100px;
+  padding-left: 70px;
 
-    &__text {
-        grid-column: 1 / span 2;
-        text-transform: uppercase;
-        font-size: 38px;
-        line-height: 1.14;
-        margin-bottom: 20px;
-        font-family: $sec-font;
+  &__text {
+    grid-column: 1 / span 2;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+    font-family: $sec-font;
 
-        &--accent {
-            font-size: 58px;
-            line-height: 0.9;
-            color: $h2-color;
-        }
+    &--accent {
+      font-size: 58px;
+      line-height: 0.9;
+      color: $h2-color;
+    }
+  }
+
+  &__button {
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.28;
+    max-width: 130px;
+
+    &--one {
+      background-color: $h2-color;
+      color: $primary-text-color;
     }
 
-    &__button {
-        border-radius: 25px;
-        border: none;
-        padding: 10px;
-        font-size: 14px;
-        line-height: 1.28;
-        max-width: 130px;
+    &--two {
+      background-color: $primary-text-color;
 
-        &--one {
-            background-color: $h2-color;
-            color: $primary-text-color;
-        }
-
-        &--two {
-            background-color: $primary-text-color;
-
-            & a {
-                color: $h2-color;
-            }
-        }
+      & a {
+        color: $h2-color;
+      }
     }
+  }
+}
+.heading__button--one:hover {
+  background-color: $primary-text-color;
+}
+.heading__button--one:hover a {
+  background-color: transparent;
+  color: $h2-color;
+}
+.heading__button--two:hover {
+  background-color: $h2-color;
+}
+.heading__button--two:hover a {
+  color: $primary-text-color;
+  background-color: transparent;
 }
 
 // Milk picture
 .milk-picture {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    max-width: 50%;
-    min-height: 200px;
-    column-gap: 30px;
-    padding: 70px 0 50px 45px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 50%;
+  min-height: 200px;
+  column-gap: 30px;
+  padding: 70px 0 50px 45px;
 
-    &__text {
-        max-width: 185px;
-        font-size: 14px;
-        line-height: 140%;
-        margin: auto 0;
-    }
+  &__text {
+    max-width: 185px;
+    font-size: 14px;
+    line-height: 140%;
+    margin: auto 0;
+  }
 
-    &__button {
-        display: block;
-        width: 10px;
-        height: 10px;
-        fill: $h2-color;
-    }
+  &__button {
+    display: block;
+    fill: $h2-color;
+    width: 14px;
+    height: 23px;
+    margin: auto;
+  }
 
-    &__ellipse {
-        display: flex;
-        width: 26px;
-        height: 26px;
-        border-radius: 50%;
-        background-color: $primary-text-color;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
+  &__ellipse {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: $primary-text-color;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+.milk-picture__ellipse:hover {
+  background-color: $h2-color;
+}
+
+.milk-picture__ellipse:hover .milk-picture__button {
+  fill: $primary-text-color;
+  background-color: transparent;
 }
 
 // Ice-cream picture
 .ice-cream {
-    position: relative;
-    left: 475px;
-    top: 52px;
+  position: relative;
+  left: 475px;
+  top: 52px;
 
-    &-ellipse {
-        position: absolute;
-        width: 570px;
-        height: 538px;
-        top: -4vh;
-        right: 24vh;
-        fill: $secondary-header-bg-color;
-    }
+  &-ellipse {
+    position: absolute;
+    width: 570px;
+    height: 538px;
+    top: -4vh;
+    right: 24vh;
+    fill: $secondary-header-bg-color;
+  }
 
-    &-picture {
-        position: absolute;
-        right: 44vh;
-        bottom: 0;
-        z-index: 1001;
-        height: 605px;
-    }
+  &-picture {
+    position: absolute;
+    right: 44vh;
+    bottom: 0;
+    z-index: 1001;
+    height: 605px;
+  }
 }
 
 // Numbers section
 .numbers {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 7vh;
+  right: 11vh;
+  max-width: 200px;
+  align-items: flex-end;
+  text-align: end;
+  font-size: 14px;
+  line-height: 1.28;
+  z-index: 1005;
+
+  &__ellipse {
+    fill: $primary-text-color;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 7vh;
-    right: 11vh;
-    max-width: 200px;
-    align-items: flex-end;
-    text-align: end;
-    font-size: 14px;
-    line-height: 1.28;
-    z-index: 1005;
+    z-index: -1000;
+    right: -2vh;
 
-    &__ellipse {
-        fill: $primary-text-color;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        z-index: -1000;
-        right: -2vh;
-
-        &--two {
-            bottom: 40%;
-        }
+    &--two {
+      bottom: 40%;
     }
+  }
 
-    &__text {
-        margin-bottom: 40px;
-    }
+  &__text {
+    margin-bottom: 40px;
+  }
 
-    &__digits {
-        font-size: 3rem;
-        font-family: $sec-font;
-        color: $h2-color;
-    }
+  &__digits {
+    font-size: 3rem;
+    font-family: $sec-font;
+    color: $h2-color;
+  }
 }
 
 // Woman photo
 .woman-photo {
-    height: 232px;
-    width: 290px;
-    background-image: url(../images/header-woman-desktop-1x.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0vh;
-    right: 6vh;
+  height: 232px;
+  width: 290px;
+  background-image: url(../images/header-woman-desktop-1x.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0vh;
+  right: 6vh;
+}
+
+@media screen and (min-width: 1280px) {
+  .mobile-navigation,
+  .hamburger__x,
+  .hamburger__button,
+  .hamburger {
+    display: none;
+  }
 }
 
 // Tablet
-@media screen and (min-width: 1280px) {
-
-    .mobile-navigation,
-    .hamburger__x,
-    .hamburger__button,
-    .hamburger {
-        display: none;
-    }
-}
 
 // Nav bar
 @media screen and (max-width: 1279px) {
-    .navigation-bar {
-        padding: 50px 5px 0 46px;
+  .navigation-bar {
+    padding: 50px 5px 0 46px;
 
-        &__menu {
-            display: none;
-        }
-
-        &__button {
-            display: block;
-            margin-left: 0;
-
-            &--btn {
-                min-width: 175px;
-                padding: 15px;
-            }
-        }
+    &__menu {
+      display: none;
     }
 
-    // Hamburger
-    .mobile-navigation {
-        display: flex;
-        justify-content: space-between;
+    &__button {
+      display: block;
+      margin-left: 0;
 
-        &__icon {
-            fill: $h2-color;
-            position: absolute;
-            width: 35px;
-            height: 35px;
-            top: 7vh;
-            right: 30vh;
-        }
+      &--btn {
+        min-width: 175px;
+        padding: 15px;
+      }
+    }
+  }
+
+  // Heading
+  .heading {
+    padding-top: 40px;
+    padding-left: 50px;
+    max-width: 20vh;
+
+    &__text {
+      font-size: 22px;
+      z-index: 1005;
+      letter-spacing: 3px;
+
+      &--accent {
+        font-size: 34px;
+      }
     }
 
-    .hamburger {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #E17992;
-        transform: translateX(100%);
-        transition: transform 250ms ease-in-out;
-        font-family: $main-font;
-        color: $primary-text-color;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 1.17;
-        display: flex;
-        flex-direction: column;
-        z-index: 1100;
+    &__button {
+      z-index: 1005;
+      font-size: 8px;
+    }
+  }
+
+  // Ice-cream picture
+  .ice-cream-picture {
+    height: 370px;
+    right: 39vh;
+  }
+
+  .ice-cream-ellipse {
+    right: 27vh;
+    top: -7vh;
+    max-height: 350px;
+    width: 370px;
+  }
+
+  // Milk picture
+  .milk-picture {
+    padding: 20px 0 0 40px;
+
+    &__picture {
+      max-width: 124px;
+      max-height: 126px;
+      z-index: 1005;
     }
 
-    .hamburger-list-container {
-        margin: auto;
-        margin-top: 60px;
-
-        &__link--active {
-            color: $h2-color;
-        }
-
-        &__item {
-            margin-bottom: 70px;
-            border-top: 1px solid #E18298;
-            border-bottom: 1px solid #E18298;
-            padding-top: 22px;
-            padding-bottom: 22px;
-            width: 100vw;
-            text-align: center;
-        }
+    &__text {
+      z-index: 1005;
+      font-size: 8px;
+      max-width: 115px;
     }
 
-    // JS & toggle buttons
-    .js-menu-container.is-open {
-        transform: translateX(0);
+    &__ellipse {
+      width: 18px;
+      height: 18px;
     }
 
-    .mobile-navigation__button,
-    .hamburger__close-btn {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    &__button {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  // Numbers section
+  .numbers {
+    top: 2vh;
+    right: 3vh;
+
+    &__text {
+      font-size: 8px;
+      margin-bottom: 15px;
     }
 
-    .hamburger__close-btn {
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        left: 73%;
-        top: 3%;
-        background-color: rgba(0, 0, 0, 0);
+    &__digits {
+      font-weight: 400;
+      font-size: 28px;
     }
 
-    .hamburger__x {
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        right: -4vh;
-        top: 0vh;
-        fill: $primary-text-color;
+    &__ellipse {
+      height: 16px;
+      width: 16px;
+      right: -1vh;
     }
+  }
 
-    .hamburger__button {
-        max-width: 500px;
-        margin: auto;
-        margin-top: 18vh;
-    }
-
-    // Heading
-    .heading {
-        padding-top: 40px;
-        padding-left: 50px;
-        max-width: 20vh;
-
-        &__text {
-            font-size: 22px;
-            z-index: 1005;
-            letter-spacing: 3px;
-
-            &--accent {
-                font-size: 34px;
-            }
-        }
-
-        &__button {
-            z-index: 1005;
-            font-size: 8px;
-        }
-    }
-
-    // Ice-cream picture
-    .ice-cream-picture {
-        height: 370px;
-        right: 19vh;
-    }
-
-    .ice-cream-ellipse {
-        right: 6vh;
-        top: -7vh;
-        max-height: 350px;
-        width: 370px;
-    }
-
-    // Milk picture
-    .milk-picture {
-        padding: 20px 0 0 40px;
-
-        &__picture {
-            max-width: 124px;
-            max-height: 126px;
-            z-index: 1005;
-        }
-
-        &__text {
-            z-index: 1005;
-            font-size: 8px;
-            max-width: 115px;
-        }
-
-        &__ellipse {
-            width: 18px;
-            height: 18px;
-        }
-
-        &__button {
-            width: 6px;
-            height: 6px;
-        }
-    }
-
-    // Numbers section
-    .numbers {
-        top: 2vh;
-        right: 3vh;
-
-        &__text {
-            font-size: 8px;
-            margin-bottom: 15px;
-        }
-
-        &__digits {
-            font-weight: 400;
-            font-size: 28px;
-        }
-
-        &__ellipse {
-            height: 16px;
-            width: 16px;
-            right: -1vh;
-        }
-    }
-
-    // Woman photo
-    .woman-photo {
-        width: 190px;
-        height: 140px;
-        background-position: center;
-        background-size: contain;
-        z-index: 1100;
-        right: 0;
-    }
+  // Woman photo
+  .woman-photo {
+    width: 190px;
+    height: 140px;
+    background-position: center;
+    background-size: contain;
+    z-index: 1100;
+    right: 0;
+  }
 }
 
 // Mobile
 @media screen and (max-width: 767px) {
+  .ice-cream,
+  .milk-picture,
+  .numbers,
+  .woman-photo {
+    display: none;
+  }
 
-    .ice-cream,
-    .milk-picture,
-    .numbers,
-    .woman-photo {
-        display: none;
+  // Nav bar
+  .navigation-bar__logo,
+  .navigation-bar__menu,
+  .navigation-bar__button {
+    display: none;
+  }
+
+  // Header & heading
+  .header {
+    padding: 0;
+    height: 511px;
+  }
+
+  .heading {
+    font-size: 26px;
+    margin: auto 0;
+
+    &__text {
+      max-width: 160px;
+
+      &--accent {
+        font-size: 48px;
+      }
     }
+  }
 
-    // Nav bar
-    .navigation-bar .navigation-bar__button--btn {
-        display: none;
-    }
+  // Ice-cream picture
+  .ice-cream-picture {
+    height: 410px;
+    bottom: -26.5vh;
+    right: 18vh;
+  }
 
-    .navigation-bar {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 0 0 46px;
-    }
-
-    .mobile-navigation__icon {
-        position: static;
-    }
-
-    // Header & heading
-    .header {
-        height: 502px;
-    }
-
-    .heading {
-        font-size: 26px;
-        margin: auto 0;
-
-        &__text {
-            max-width: 160px;
-
-            &--accent {
-                font-size: 48px;
-            }
-        }
-    }
-
-    // Ice-cream picture
-    .ice-cream-picture {
-        height: 410px;
-        bottom: -26.5vh;
-        right: 18vh;
-    }
+  .ice-cream-ellipse {
+    right: 6vh;
+  }
 }
 
 // Mobile
 @media screen and (max-width: 480px) {
-    .ice-cream-ellipse {
-        right: 3vh;
-        top: -3vh;
-    }
+  .ice-cream-ellipse {
+    right: 3vh;
+    top: -3vh;
+  }
 
-    .ice-cream-picture {
-        right: 12vh;
-    }
+  .ice-cream-picture {
+    right: 12vh;
+  }
 }
