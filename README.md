@@ -1,4 +1,4 @@
-# GoIT Fullstack Dev Course, HTML & CSS module - group project
+# GoIT Fullstack Dev Course, HTML & CSS module - group project - ICE CREAM STORE
 ### Live Demo
 https://adriansiwek.github.io/team-project-IceCream-03/
 
