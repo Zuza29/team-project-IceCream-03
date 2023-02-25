@@ -1,48 +1,24 @@
-# parcel-project-template
+# GoIT Fullstack Dev Course, HTML & CSS module - group project
+### Live Demo
+https://adriansiwek.github.io/team-project-IceCream-03/
 
-## Zalezności
+### Description
+This is a group project I have participated in as a Scrum Master and a developer. The goal of the project was to create a website for a fictional ice-cream store. 
 
-Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
+### My contribution
+I was responsible for: 
+- creating & updating our Trello, running daily stand-ups, organising the workflow as a Scrum Master;
+- creating the header (HTML, CSS, animations, modal window) as a developer.
 
-## Przed rozpoczęciem pracy
+### Technologies
+- HTML <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+- CSS <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+- JavaScript <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+- Figma, Trello
 
-Jeden raz na projekt zainstalować wszystkie zalezności.
-
-```shell
-npm ci
-```
-
-### Praca
-
-Włączyć tryp pracy.
-
-```shell
-npm run dev
-```
-
-W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
-
-### Deploy
-
-Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 
-na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
-`build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na swoje.
-
-```json
-"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
-},
-```
-
-Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
-jest wpisany w poprawione właściwości `homepage`, na przykład
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-## Pliki i folderzy
-
-- Wszystkie partials plików styłów powinny być w folderze `src/sass` i importować się w
-  `src/sass/main.scss`
-- Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie. Program po prostu 
-  kopiuje wykorzystane zdjęcia aby system nie musiał optymizować je, bo na słabych komputerach 
-  to moze zająć duzo czasu.
+### Developers
+- Adrian Siwek (Team Leader, Developer)
+- Zuzanna Kaźmierczak (Scrum Master, Developer)
+- Dariusz Kuśnieruk (Developer)
+- Paulina Woźniak (Developer)
+- Bartłomiej Kokosza (Developer)
